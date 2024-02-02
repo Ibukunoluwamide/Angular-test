@@ -1,0 +1,20 @@
+<h2 class="text-center mt-5">CROWNWEALTH INSTITUTION</h2>
+<div class="col-md-5 m-auto shadow p-3 mt-3">
+    <div>
+        <h5 class="text-center mb-4">Admin Login</h5>
+        @if (msg!="") {
+        <div class={{style}}>{{msg}}</div>
+        }
+        <div class="mb-3">
+            <label for="">User Name</label>
+            <input type="text" class="form-control" [(ngModel)]="admin.username">
+        </div>
+        <div class="mb-3">
+            <label for="">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="admin.password">
+        </div>
+        <div class="mb-3">
+            <input type="submit" class="btn btn-primary" (click)="loginBtn()">
+        </div>
+    </div>
+</div>

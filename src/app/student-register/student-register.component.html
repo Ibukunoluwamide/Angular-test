@@ -1,0 +1,32 @@
+<section class="">
+    <h2 class="text-center">CROWNWEALTH INSTITUTION</h2>
+    <div class="col-md-5 m-auto shadow p-3 mt-3">
+        <div action="">
+            <h5 class="text-center mb-3">Student Registration</h5>
+            @if (msg!="") {
+                <div class={{style}}>{{msg}}</div>
+            }
+            <div class="mb-3">
+                <label for="">First Name</label>
+                <input type="text" class="form-control" [(ngModel)]="student.firstname">
+            </div>
+            <div class="mb-3">
+                <label for="">Last Name</label>
+                <input type="text" class="form-control" [(ngModel)]="student.lastname">
+            </div>
+            <div class="mb-3">
+                <label for="">Student ID</label>
+                <input type="number" class="form-control" [(ngModel)]="student.student_id">
+            </div>
+            <div class="mb-3">
+                <label for="">Email address</label>
+                <input type="email" class="form-control" [(ngModel)]="student.email">
+            </div>
+            <div class="mb-3">
+                <label for="">Password</label>
+                <input type="password" class="form-control" [(ngModel)]="student.password">
+            </div>
+            <button class="btn btn-primary w-100" (click)="registerBtn()">Register</button>
+        </div>
+    </div>
+</section>
