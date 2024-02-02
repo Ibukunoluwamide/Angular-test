@@ -10,6 +10,8 @@ export const routes: Routes = [
     {path:'home', component: StudentRegisterComponent},
     {path:'admin-register', component: AdminRegisterComponent},
     {path:'admin-login', component: AdminLoginComponent},
-    {path:'dashboard', component: DashboardComponent, canActivate: [adminGuard]}
+    {path:'dashboard', component: DashboardComponent,
+    canActivate: [adminGuard]},
+    {path:'dashboard/:id', component: DashboardComponent},
     
 ];
